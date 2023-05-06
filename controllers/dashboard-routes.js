@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Post } = require('../models/');
 const withAuth = require('../utils/auth');
-
+// routes to the logged in user dashboard
+// and displays all posts
 router.get('/', withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
@@ -26,7 +27,8 @@ router.get('/new', withAuth, (req, res) => {
     layout: 'dashboard',
   });
 });
-
+// allow to edit a post by using its id to render a new edit
+// also gives an error 404 if not found
 router.get('/edit/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);

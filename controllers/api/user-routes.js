@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-
+// post router for newUser session save
 router.post('/', async (req, res) => {
   try {
     const newUser = await User.create({
@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+// post router for logging in and a 400 error if not found
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({
@@ -51,7 +51,7 @@ router.post('/login', async (req, res) => {
     res.status(400).json({ message: 'No user account found!' });
   }
 });
-
+// terminates the connection after logging out
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
