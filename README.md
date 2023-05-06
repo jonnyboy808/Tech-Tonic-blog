@@ -1,1 +1,1 @@
-# Tech-Tonic-blog
+# Tech Tonic blog
