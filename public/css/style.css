@@ -38,10 +38,18 @@ main {
 
 a {
   text-decoration: none;
+  color: var(--orange)
+}
+.footer a {
+  display: inline-block;
+  padding: 10px;
+  padding: 10px;
+  background-color: var(--orange);
+  color: var(--primary);
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 h1,
 h2,
@@ -68,19 +76,17 @@ input {
 }
 
 .btn {
-  font-size: 1.3rem;
+  font-size: 20px;
   text-decoration: none;
   padding: 6px 5px;
   width: 100%;
   display: block;
-  margin: 5px 0;
+  margin: 7px 0;
   border-radius: var(--border-radius);
   color: var(--primary);
   border: none;
   outline: none;
   background-color: var(--light-dark);
-  box-shadow: 3px 3px var(--orange);
-  transform: translate(-1px, -1px);
 }
 
 .btn:hover {
@@ -123,7 +129,7 @@ input {
 }
 
 .app-title {
-  font-size: 3rem;
+  font-size: 50px;
   background-color: var(--primary);
   color: var(--orange);
   padding: 0 10px;
@@ -153,15 +159,6 @@ input {
   background-color: var(--orange);
 }
 
-.footer a {
-  display: inline-block;
-  padding: 1em;
-  margin-bottom: .5em;
-  background-color: var(--orange);
-  color: var(--primary);
-  border-radius: var(--border-radius);
-  text-decoration: none;
-}
 
 .card {
   margin: 0 0 20px 0;
@@ -173,7 +170,6 @@ input {
   color: var(--primary);
   background-color: var(--orange);
   padding: 1%;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
 .card-body {
@@ -187,7 +183,7 @@ input {
 }
 
 .form-label {
-  font-size: 1.1rem;
+  font-size: 20px;
   margin: 0 0 0 5px;
 }
 
@@ -195,7 +191,7 @@ input {
   width: 100%;
   padding: 1%;
   margin: 5px 0;
-  font-size: 1.2rem;
+  font-size: 20px;
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
 }
