@@ -1,6 +1,7 @@
 const newFormHandler = async function(event) {
     event.preventDefault();
   
+      // queryselector for input and textarea
     const title = document.querySelector('input[name="post-title"]').value;
     const body = document.querySelector('textarea[name="post-body"]').value;
   

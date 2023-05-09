@@ -1,3 +1,4 @@
+// defines the required dependencies to be used
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -9,9 +10,9 @@ const PORT = process.env.PORT || 3001;
 
 const sequelize = require('./config/config');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
+// creates the session and timeout of 5 minutes
 const sess = {
-    secret: 'Super secret secret',
+    secret: 'Unique road',
     cookie: {
       maxAge: 300000,
       httpOnly: true,
