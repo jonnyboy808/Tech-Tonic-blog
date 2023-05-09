@@ -4,7 +4,7 @@
 
 ## Links
 
-[Blog deployed site](https://drive.google.com/file/d/1pPk3p78dewEXlqegHU1T5IhvrfWoZ0OO/view)
+[Blog deployed site](https://murmuring-badlands-23825.herokuapp.com)
 
 ## Table of Contents
 
